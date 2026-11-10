@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0f">
+  <meta name="description" content="Портфолио {{NAME_FULL_GEN}} — UX/UI-дизайнер.">
+  <title>{{NAME_FULL}} — UX/UI-дизайнер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="{{NAME_FIRST}} — на главную">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span>{{NAME_FIRST}}</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#projects">Мои проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero-label"><span class="label-dot" aria-hidden="true"></span> UX/UI · B2B2E / B2C</p>
+
+      <img
+        class="hero-portrait"
+        src="static/images/photo.webp"
+        alt="Фотография {{NAME_FIRST_GEN}}"
+        width="440" height="470" fetchpriority="high" decoding="async"
+      >
+
+      <h1 id="hero-title">{{NAME_FULL}}</h1>
+      <p class="hero-subtitle">UX/UI-дизайнер с опытом 2 года</p>
+      <p class="hero-description">
+        Работала со сложными интерфейсами для B2B2E/B2C-продуктов в<br class="desktop-break">
+        EdTech. Вела задачи полного цикла — от исследования до прототипа и<br class="desktop-break">
+        юзабилити-тестирования.
+      </p>
+
+      <ul class="skills" aria-label="Компетенции">
+        <li>UX Research</li>
+        <li>Information Architecture</li>
+        <li>User flow</li>
+        <li>UI</li>
+        <li>Prototyping</li>
+        <li>Usability Testing</li>
+        <li>AI</li>
+      </ul>
+    </section>
+
+    <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Мои проекты</h2>
+
+      <article class="project-card project-card-radium row">
+        <div class="project-copy col-12 col-md-6">
+          <ul class="project-tags" aria-label="Категории проекта">
+            <li>UX/UI</li>
+            <li>LMS</li>
+            <li>Web app</li>
+            <li>EdTech</li>
+            <li>Исследования и аналитика</li>
+          </ul>
+
+          <h3>Проектирование интерфейса<br class="desktop-break"> LMS-платформы «Радиум»</h3>
+          <p class="project-description">
+            LMS-платформа для обучения разработке игр: курсы, кодовые
+            задания, автоматическая проверка и управление учебным
+            процессом — в одном рабочем пространстве.
+          </p>
+
+          <div class="project-stats">
+            <div class="stat">
+              <div class="stat-value">
+                <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="none" d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1-7 0a5 5 0 0 0-7 0zm0 16v-7"/>
+                </svg>
+                <strong>11/13</strong>
+              </div>
+              <span>прошли сценарий<br>без подсказок</span>
+            </div>
+            <div class="stat">
+              <div class="stat-value">
+                <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"/><path d="m9 12l2 2l4-4"/></g>
+                </svg>
+                <strong>0</strong>
+              </div>
+              <span>критических<br>ошибок</span>
+            </div>
+            <div class="stat">
+              <div class="stat-value">
+                <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="none" d="m12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"/>
+                </svg>
+                <strong>4,77/5</strong>
+              </div>
+              <span>оценка удобства<br>платформы</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="case-link case-link-secondary" type="button" data-project-open="radium" aria-haspopup="dialog">Подробнее о проекте</button>
+          </div>
+        </div>
+
+        <div class="project-visual radium-visual col-12 col-md-6">
+          <img src="static/images/radium-dashboard.webp" alt="Интерфейс LMS-платформы «Радиум»" width="675" height="456" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="project-card project-card-coffee row">
+        <div class="project-copy col-12 col-md-6">
+          <ul class="project-tags" aria-label="Категории проекта">
+            <li>UX/UI</li>
+            <li>Web</li>
+            <li>Mobile</li>
+            <li>EdTech</li>
+            <li>Interaction</li>
+          </ul>
+
+          <h3>Проектирование дизайна<br class="desktop-break"> интерактивных обучающих модулей<br class="desktop-break"> для обучения персонала кофейни</h3>
+          <p class="project-description">
+            UI-дизайн 8 обучающих модулей, которые помогают сотрудникам
+            осваивать регламенты через практические сценарии.
+          </p>
+
+          <div class="project-stats">
+            <div class="stat">
+              <div class="stat-value">
+                <svg class="stat-icon stat-icon-warm" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.083 5h10.834A1.08 1.08 0 0 1 16 6.077v8.615C16 17.072 14.06 19 11.667 19H7.333C4.94 19 3 17.071 3 14.692V6.077A1.08 1.08 0 0 1 4.083 5M16 8h2.5c1.38 0 2.5 1.045 2.5 2.333v2.334C21 13.955 19.88 15 18.5 15H16"/>
+                </svg>
+                <strong>8</strong>
+              </div>
+              <span>модулей и мини-игр</span>
+            </div>
+            <div class="stat">
+              <div class="stat-value">
+                <svg class="stat-icon stat-icon-warm" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="none" d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0-8 0M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2m1-17.87a4 4 0 0 1 0 7.75M21 21v-2a4 4 0 0 0-3-3.85"/>
+                </svg>
+                <strong>328</strong>
+              </div>
+              <span>участников опроса</span>
+            </div>
+            <div class="stat">
+              <div class="stat-value">
+                <svg class="stat-icon stat-icon-warm" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="none" d="m12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"/>
+                </svg>
+                <strong>88%</strong>
+              </div>
+              <span>положительных оценок</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="case-link case-link-secondary case-link-secondary-warm" type="button" data-project-open="coffee" aria-haspopup="dialog">Подробнее о проекте</button>
+          </div>
+        </div>
+
+        <div class="project-visual coffee-visual col-12 col-md-6" aria-label="Экраны обучающих модулей">
+          <img src="static/images/coffee-module-1.webp" alt="Первый экран обучающего модуля" width="589" height="370" loading="lazy" decoding="async">
+        </div>
+      </article>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="row about-row">
+        <div class="about-copy col-12 col-md-7">
+          <h2 class="section-title" id="about-title">Обо мне</h2>
+
+          <p class="about-lead">
+            <span>Технический бэкграунд</span> позволяет смотреть на<br class="desktop-break">
+            продукт глазами пользователя и разработчика.
+          </p>
+
+          <p class="about-description">
+            Мне интересно превращать сложную бизнес-логику в понятную архитектуру и предсказуемый пользовательский путь.
+            В работе соединяю исследование, структуру, визуальный язык и внимание к тому, как интерфейс ведёт себя в реальных
+            сценариях.
+          </p>
+
+          <h3 class="education-title">Образование</h3>
+
+          <div class="education-list">
+            <article class="education-item">
+              <time datetime="2022/2026">2022-2026</time>
+              <div>
+                <h4>Уральский федеральный университет</h4>
+                <p>Институт радиоэлектроники и информационных технологий — РТФ. Прикладная информатика, бакалавриат.</p>
+              </div>
+            </article>
+
+            <article class="education-item">
+              <time datetime="2024/2025">2024-2025</time>
+              <div>
+                <h4>Уральский федеральный университет</h4>
+                <p>DevOps: виртуализация и облачные вычисления для бизнеса. Диплом о профессиональной переподготовке.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="about-visual col-12 col-md-5">
+          <img src="static/images/about-illustration.webp" alt="Декоративная 3D-композиция" width="560" height="416" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell row" id="contacts">
+    <div class="footer-contact col-12 col-md-6">
+      <h2 class="section-title">Контакты</h2>
+      <address>
+        <p>Telegram: {{TELEGRAM}}</p>
+        <p>Почта: {{CONTACT_EMAIL}}</p>
+      </address>
+      <small>© {{NAME_FULL}} 2026</small>
+    </div>
+
+    <div class="footer-visual col-12 col-md-6">
+      <img src="static/images/footer-illustration.webp" alt="Декоративная 3D-композиция" width="197" height="154" loading="lazy" decoding="async">
+    </div>
+  </footer>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-modal-close></div>
+    <section
+      class="project-modal__dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project-modal-title"
+      tabindex="-1"
+    >
+      <button class="project-modal__close" type="button" aria-label="Закрыть окно" data-modal-close>×</button>
+      <div class="project-modal__content" id="project-modal-content"></div>
+    </section>
+  </div>
+
+  <template id="radium-project-template">
+    <article class="case-detail">
+      <header class="case-detail__header">
+        <h2 id="project-modal-title">Проектирование интерфейса LMS-платформы «Радиум» для обучения разработке игр</h2>
+        <p class="case-detail__intro">LMS-платформа для обучения разработке игр: курсы, кодовые задания, автоматическая проверка и управление учебным процессом — в одном рабочем пространстве.</p>
+        <dl class="case-detail__meta">
+          <div><dt>Роль</dt><dd>UX/UI-дизайнер</dd></div>
+          <div><dt>Обязанности</dt><dd>Research, IA, User flow, UX / UI, UI-kit, Prototyping, Usability Testing</dd></div>
+          <div><dt>Объем проекта</dt><dd>4 пользовательские роли · 5 пользовательских путей · 32 экрана · 20+ компонентов</dd></div>
+          <div><dt>Платформа</dt><dd>WEB</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-detail__section case-detail__two-col">
+        <div>
+          <h3>Проблема</h3>
+          <p>Отсутствие единой среды с автопроверкой заставляет тонуть в ручной работе, затягивает обратную связь и делает качественные курсы Unity немасштабируемыми. </p>
+          <p>UX-боль: Необходимость постоянно переключаться между теорией в LMS и написанием кода в IDE ломает фокус студента и приводит к быстрому утомлению.</p>
+        </div>
+        <div>
+          <h3>UX-задача</h3>
+          <p>Cпроектировать единую среду для обучения Unity, которая сокращает переключение между инструментами, но не перегружает пользователя функциональностью IDE и LMS одновременно.</p>
+        </div>
+      </section>
+
+      <section class="case-detail__section">
+        <h3>Исследование</h3>
+        <p>Я провела интервью с представителями целевой аудитории, чтобы понять, с какими трудностями они сталкиваются и чего ожидают от учебного процесса. По результатам исследования выделила три основные группы пользователей с разными задачами и потребностями.</p>
+        <div class="case-detail__image-grid case-detail__image-grid--three">
+          <figure><img src="static/images/radium-research-01.webp" alt="Исследование, группа пользователей" width="1280" height="678" loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="case-detail__section">
+        <h3>Гипотезы и решения</h3>
+        <div class="case-detail__hypothesis">
+          <div><span class="case-detail__tag">Гипотеза 1</span><h4>Переключение между средами ломает рабочий процесс</h4><p><strong>Решение →</strong> Редактор кода и результат проверки встроены в тот же рабочий контекст, где пользователь получает задание.</p></div>
+          <img src="static/images/radium-hypothesis-01.webp" alt="Заглушка изображения: решение по гипотезе 1" width="1920" height="1490" loading="lazy" decoding="async">
+        </div>
+        <div class="case-detail__hypothesis">
+          <div><span class="case-detail__tag">Гипотеза 2</span><h4>Преподавателю нужен быстрый и понятный обзор работ и их статусов</h4><p><strong>Решение →</strong> Ведомость — управляемый обзор: фильтры по главам, выгрузка в Excel, структурированные темы и подсветка студентов с новыми заданиями.</p></div>
+          <img src="static/images/radium-hypothesis-02.webp" alt="Заглушка изображения: решение по гипотезе 2" width="1596" height="982" loading="lazy" decoding="async">
+        </div>
+        <div class="case-detail__hypothesis">
+          <div><span class="case-detail__tag">Гипотеза 3</span><h4>Автору нужен быстрый и понятный путь создания задания</h4><p><strong>Решение →</strong> Сценарий настройки кодового задания разбит на пошаговый степпер вместо одного перегруженного экрана.</p></div>
+          <img src="static/images/radium-hypothesis-03.webp" alt="Заглушка изображения: решение по гипотезе 3" width="1487" height="953" loading="lazy" decoding="async">
+        </div>
+      </section>
+
+      <section class="case-detail__section">
+        <h3>Информационная архитектура</h3>
+        <p>В основе структуры лежит принцип иерархической организации разделов и наследования прав доступа. Карта сайта демонстрирует логичную иерархию интерфейса, последовательное расширение функциональности в зависимости от роли пользователя и обеспечивает удобную навигацию по системе.</p>
+        <figure class="case-detail__wide-image"><img src="static/images/radium-information-architecture.webp" alt="Информационная архитектура LMS-платформы" width="1698" height="1134" loading="lazy" decoding="async"></figure>
+      </section>
+
+      <section class="case-detail__section">
+        <h3>Юзабилити-тестирование</h3>
+        <p>Сценарное тестирование показало отсутствие критических ошибок в ключевых путях и одновременно выявило проблему с обнаружением ведомости и её рабочим сценарием.</p>
+        <h4>Ограничения проверки</h4>
+        <p>Прототип позволил оценить понятность основных сценариев, но не дал возможности достоверно измерить время выполнения сложных задач с реальным вводом данных. Поэтому временные и бизнес-показатели требуют проверки на работающем продукте.</p>
+        <div class="case-detail__image-grid case-detail__image-grid--two">
+          <figure><figcaption>Было · V1 — Ведомость</figcaption><img src="static/images/radium-usability-01.webp" alt="Юзабилити-тестирование, ведомость до изменений" width="1920" height="953" loading="lazy" decoding="async"></figure>
+          <figure><figcaption>Стало · V3 — Ведомость</figcaption><img src="static/images/radium-usability-02.webp" alt="Юзабилити-тестирование, ведомость после изменений" width="1920" height="953" loading="lazy" decoding="async"></figure>
+        </div>
+        <p>Ведомость стала управляемым обзором: фильтры по главам и общие, выгрузка в Excel, структурированные темы и визуальное выделение студентов с новыми заданиями.</p>
+        <div class="case-detail__image-grid case-detail__image-grid--two">
+          <figure><figcaption>Было · V1 — Настройки учебной группы</figcaption><img src="static/images/radium-usability-03.webp" alt="Юзабилити-тестирование, настройки учебной группы до изменений" width="1750" height="1080" loading="lazy" decoding="async"></figure>
+          <figure><figcaption>Стало · V3 — Настройки учебной группы</figcaption><img src="static/images/radium-usability-04.webp" alt="Юзабилити-тестирование, настройки учебной группы после изменений" width="1750" height="1080" loading="lazy" decoding="async"></figure>
+        </div>
+        <p>Интерфейс управления группой стал масштабируемым под длинные списки: поиск по студентам ускоряет навигацию, пагинация снижает визуальную перегрузку, сворачиваемые секции управляют плотностью информации — в итоге повышается сканируемость.</p>
+      </section>
+
+      <section class="case-detail__section">
+        <h3>Результат</h3>
+        <p>Провела юзабилити-тестирование: 13 участников, 11 из 13 участников прошли сценарии без подсказок, оценка удобства — 4,77/5, оценка визуального дизайна — 4,85/5.</p>
+        <div class="case-detail__metrics">
+          <div><strong>13</strong><span>участников тестирования</span></div>
+          <div><strong>11/13</strong><span>прошли сценарии без подсказок</span></div>
+          <div><strong>4,77/5</strong><span>оценка удобства</span></div>
+          <div><strong>4,85/5</strong><span>оценка визуального дизайна</span></div>
+        </div>
+      </section>
+
+      <section class="case-detail__section">
+        <h3>Ожидаемый эффект и дальнейшая проверка</h3>
+        <p>Продукт находится в разработке, поэтому реальные показатели эффективности пока нельзя оценить.</p>
+        <h4>Что можно проверить после запуска</h4>
+        <ul>
+          <li><strong>Студент:</strong> доля успешно завершённых сценариев, время до понимания ошибки;</li>
+          <li><strong>Преподаватель:</strong> время на поиск работы и среднее время проверки;</li>
+          <li><strong>Автор курса:</strong> доля завершённых сценариев и количество ошибок настройки заданий и курсов.</li>
+        </ul>
+        <p>Ожидаемый эффект: меньше переключений между инструментами, упрощение контроля учебного процесса и уменьшение ошибок при настройке заданий и курсов.</p>
+      </section>
+    </article>
+  </template>
+
+  <template id="coffee-project-template">
+    <article class="case-detail">
+      <header class="case-detail__header">
+        <h2 id="project-modal-title">Проектирование дизайна интерактивных обучающих модулей для обучения персонала кофейни</h2>
+        <p class="case-detail__intro">UI-дизайн 8 обучающих модулей, которые помогают сотрудникам осваивать регламенты через практические сценарии.</p>
+        <dl class="case-detail__meta">
+          <div><dt>Роль</dt><dd>UX/UI-дизайнер</dd></div>
+          <div><dt>Обязанности</dt><dd>UI Design, UI-kit, Prototyping, QA</dd></div>
+          <div><dt>Объем проекта</dt><dd>8 модулей и мини-игр</dd></div>
+          <div><dt>Формат</dt><dd>Web и Mobile</dd></div>
+        </dl>
+      </header>
+      <section class="case-detail__section case-detail__two-col">
+        <div>
+          <h3 style="color: #E6CCB2;">Проблема</h3>
+          <p>Существующая система обучения сотрудников построена на длинных текстовых инструкциях и регламентах. Новичкам трудно усваивать большие объемы информации. Для бизнеса это оборачивается долгим онбордингом и частыми ошибками стажеров на смене.</p>
+        </div>
+        <div>
+          <h3 style="color: #E6CCB2;">UX-задача</h3>
+          <p>Спроектировать интерактивные обучающие модули, которые переведут рутинные инструкции и регламенты сети в игровой формат.</p>
+        </div>
+      </section>
+      <section class="case-detail__section">
+        <h3 style="color: #E6CCB2;">Глубинные интервью</h3>
+        <p>По результатам глубинных интервью команда выявила основные сложности сотрудников на этапе обучения.</p>
+        <div class="case-detail__image-grid case-detail__image-grid--three">
+          <figure><img src="static/images/interview-results.webp" alt="Результаты интервью" width="1280" height="414" loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+      <section class="case-detail__section">
+        <h3 style="color: #E6CCB2;">Интерактивность на протяжении всего обучения</h3>
+        <p>Игровые механики использовались не только в финальных заданиях, но и на промежуточных этапах обучения. В теорию и тесты были добавлены интерактивные элементы, которые помогали разнообразить подачу информации.
+В рамках своей задачи я разрабатывала визуальное представление этих механик: оформляла интерактивные карточки, состояния заданий, индикаторы прогресса и элементы обратной связи.</p>
+        <div class="case-detail__image-grid case-detail__image-grid--two">
+          <figure><figcaption>Выбор предметов сервировки</figcaption><img src="static/images/coffee-task-1.webp" alt="Интерактивное тестовое задание" width="868" height="630" loading="lazy" decoding="async"></figure>
+          <figure><figcaption>Найти пару</figcaption><img src="static/images/coffee-task-2.webp" alt="Интерактивное тестовое задание" width="868" height="630" loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+      <section class="case-detail__section">
+        <h3 style="color: #E6CCB2;">Игровой сценарий в интерфейсе</h3>
+        <p>Интерактивные мини-игры встроены как финальный этап каждого обучающего модуля. После короткой теории и мини-тестов сотрудник проходит игровой сценарий, моделирующий реальную рабочую ситуацию</p>
+        <div class="case-detail__image-grid case-detail__image-grid--three">
+          <figure><img src="static/images/game-script.webp" alt="Игровой сценарий" width="1232" height="553" loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+      <section class="case-detail__section">
+        <h3 style="color: #E6CCB2;">Визуальный стиль</h3>
+        <p>Визуальное направление строилось на сочетании тёплых оттенков, ассоциирующихся с кофе и уютной атмосферой кофейни, и ярких акцентных цветов, которые помогают выделять интерактивные элементы и привлекать внимание пользователя.</p>
+        <div class="palette-container">
+          <div class="palette-item">
+            <div class="color-box color-orange"></div>
+            <strong>Оранжевый</strong>
+            <span>Акцентирует внимание на интерактивных элементах</span>
+          </div>
+        <div class="palette-item">
+            <div class="color-box color-milk"></div>
+            <strong>Молочный</strong>
+            <span>Основной фон, создаёт лёгкую и тёплую атмосферу</span>
+        </div>
+        <div class="palette-item">
+            <div class="color-box color-caramel"></div>
+            <strong>Карамель</strong>
+            <span>Поддерживает кофейную тематику, используется в карточках и элементах интерфейса</span>
+        </div>
+        <div class="palette-item">
+            <div class="color-box color-green"></div>
+            <strong>Зеленый</strong>
+            <span>Показывает правильные ответы и успешные действия</span>
+        </div>
+        <div class="palette-item">
+            <div class="color-box color-coral"></div>
+            <strong>Коралловый</strong>
+            <span>Помогает быстро распознать ошибку</span>
+        </div>
+    </div>
+      </section>
+      <section class="case-detail__section">
+        <h3 style="color: #E6CCB2;">Результат</h3>
+        <p>Интерактивные мини-игры встроены как финальный этап каждого обучающего модуля. После короткой теории и мини-тестов сотрудник проходит игровой сценарий, моделирующий реальную рабочую ситуацию</p>
+        <div class="case-detail__metrics">
+          <div><strong style="color: #E6CCB2;">8</strong><span>модулей и мини-игр</span></div>
+          <div><strong style="color: #E6CCB2;">328</strong><span>участников опроса</span></div>
+          <div><strong style="color: #E6CCB2;">88%</strong><span>положительных оценок</span></div>
+          <div><strong style="color: #E6CCB2;">4,74/5</strong><span>оценка удобства</span></div>
+        </div>
+      </section>
+    </article>
+  </template>
+
+  <script src="static/script.js" defer></script>
+</body>
+</html>
